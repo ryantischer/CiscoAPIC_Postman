@@ -19,6 +19,8 @@ Requires a Postman environment to be configured with the CASE sensitive data as 
 
 Details, including Postman setup and usage found here...
 
+http://policyetc.com/post/google-postman-and-aci-download-the-collection
+
 
 
 
