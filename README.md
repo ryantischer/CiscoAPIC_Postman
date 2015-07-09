@@ -1,6 +1,13 @@
 # CiscoAPIC_Postman
 Collection of commands to run within Google Postman.
 
+You must login via the one of the login commands BEFORE running any other commands.  THe login command captures a token
+that timesouts and the user will have to reauthenicate.  If your command returns..
+	  "code": "403",
+          "text": "Token was invalid (Error: Token timeout)"
+
+Use the login command and try again
+
 Requires a Postman environment to be configured with the CASE sensitive data as follows
 
 	URL = IP address of APIC
