@@ -324,12 +324,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1437020750982,
+			"time": 1437021460188,
 			"name": "Associate EPG with contract",
 			"description": "\n\n",
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
 			"responses": [],
-			"rawModeData": "{\"fvRsProv\":{\"attributes\":{\"tnVzBrCPName\":\"{{CONTRACT}}\",\"status\":\"created,modified\"},\"children\":[]}}"
+			"rawModeData": "{\n  \"fvRsProv\": {\n    \"attributes\": {\n      \"tnVzBrCPName\": \"{{CONTRACT}}\"\n    },\n    \"children\": []\n  }\n}"
 		},
 		{
 			"id": "3f57113a-5459-98fb-750e-4a1a1360a7a3",
@@ -483,12 +483,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1436808774403,
+			"time": 1437021721365,
 			"name": "Create a Bridge Domain and Private Net",
 			"description": "Requires Basic login.\nRequires varibales in environment.\nChange IP addresses in line 5",
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
 			"responses": [],
-			"rawModeData": "\n{\"fvTenant\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}\",\"status\":\"modified\"},\"children\"\n:[{\"fvBD\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/BD-{{BDNAME}}\",\"mac\":\"00:22:BD:F8:19:FF\",\"name\":\"{{BDNAME}}\",\"rn\":\"BD-{{BDNAME}}\",\"status\":\"created\"},\"children\":\n[{\"fvRsCtx\":{\"attributes\":{\"tnFvCtxName\":\"{{BDNAME}}\",\"status\":\"created,modified\"},\"children\":\n[]}},{\"fvSubnet\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/BD-{{BDNAME}}/subnet-[10.100.2.1/24]\",\"ip\":\"10.100.2.1/24\",\"rn\":\"subnet-[10.100.2.1/24]\",\"status\":\"created\"},\"children\":\n[]}}]}},{\"fvCtx\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/ctx-{{BDNAME}}\",\"name\":\"{{BDNAME}}\",\"rn\":\"ctx-{{BDNAME}}\",\"status\":\"created\"},\"children\":[]}}]}}\n"
+			"rawModeData": "{\n  \"fvTenant\": {\n    \"attributes\": {\n      \"dn\": \"uni/tn-{{TENANTNAME}}\",\n      \"status\": \"modified\"\n    },\n    \"children\": [\n      {\n        \"fvBD\": {\n          \"attributes\": {\n            \"dn\": \"uni/tn-{{TENANTNAME}}/BD-{{BDNAME}}\",\n            \"mac\": \"00:22:BD:F8:19:FF\",\n            \"name\": \"{{BDNAME}}\",\n            \"rn\": \"BD-{{BDNAME}}\",\n            \"status\": \"created\"\n          },\n          \"children\": [\n            {\n              \"fvRsCtx\": {\n                \"attributes\": {\n                  \"tnFvCtxName\": \"{{BDNAME}}\",\n                  \"status\": \"created,modified\"\n                },\n                \"children\": []\n              }\n            },\n            {\n              \"fvSubnet\": {\n                \"attributes\": {\n                  \"dn\": \"uni/tn-{{TENANTNAME}}/BD-{{BDNAME}}/subnet-[10.100.2.1/24]\",\n                  \"ip\": \"10.100.2.1/24\",\n                  \"rn\": \"subnet-[10.100.2.1/24]\",\n                  \"status\": \"created\"\n                },\n                \"children\": []\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"fvCtx\": {\n          \"attributes\": {\n            \"dn\": \"uni/tn-{{TENANTNAME}}/ctx-{{BDNAME}}\",\n            \"name\": \"{{BDNAME}}\",\n            \"rn\": \"ctx-{{BDNAME}}\",\n            \"status\": \"created\"\n          },\n          \"children\": []\n        }\n      }\n    ]\n  }\n}"
 		},
 		{
 			"id": "579c6b50-147a-45f2-3f9e-9d22e21cfb42",
@@ -503,12 +503,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1437019727723,
+			"time": 1437021745138,
 			"name": "Create Layer3 Out",
 			"description": "Requires Basic login.\nRequires varibales in environment.\n",
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
 			"responses": [],
-			"rawModeData": "{\"l3extOut\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/out-{{ROUTEOUT}}\",\"name\":\"{{ROUTEOUT}}\",\"rn\":\"out-{{ROUTEOUT}}\",\"status\":\"created\"},\n\"children\":[{\"ospfExtP\":\n{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/out-{{ROUTEOUT}}/ospfExtP\",\"areaId\":\"50\",\"areaType\":\"regular\",\"rn\":\"ospfExtP\",\"status\":\"created\"},\"children\":[]}},\n{\"l3extRsEctx\":{\"attributes\":{\"tnFvCtxName\":\"{{BDNAME}}\",\"status\":\"created,modified\"},\n\"children\":[]}},{\"l3extRsL3DomAtt\":{\"attributes\":{\"tDn\":\"uni/l3dom-l3out\",\"status\":\"created\"},\"children\":[]}}]}}\n\n"
+			"rawModeData": "{\n  \"l3extOut\": {\n    \"attributes\": {\n      \"dn\": \"uni/tn-{{TENANTNAME}}/out-{{ROUTEOUT}}\",\n      \"name\": \"{{ROUTEOUT}}\",\n      \"rn\": \"out-{{ROUTEOUT}}\",\n      \"status\": \"created\"\n    },\n    \"children\": [\n      {\n        \"ospfExtP\": {\n          \"attributes\": {\n            \"dn\": \"uni/tn-{{TENANTNAME}}/out-{{ROUTEOUT}}/ospfExtP\",\n            \"areaId\": \"50\",\n            \"areaType\": \"regular\",\n            \"rn\": \"ospfExtP\",\n            \"status\": \"created\"\n          },\n          \"children\": []\n        }\n      },\n      {\n        \"l3extRsEctx\": {\n          \"attributes\": {\n            \"tnFvCtxName\": \"{{BDNAME}}\",\n            \"status\": \"created,modified\"\n          },\n          \"children\": []\n        }\n      },\n      {\n        \"l3extRsL3DomAtt\": {\n          \"attributes\": {\n            \"tDn\": \"uni/l3dom-l3out\",\n            \"status\": \"created\"\n          },\n          \"children\": []\n        }\n      }\n    ]\n  }\n}\n\n"
 		},
 		{
 			"id": "6b5b23c3-cd53-f580-b57c-26d24c2a40ba",
@@ -718,12 +718,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1437020347091,
+			"time": 1437021546862,
 			"name": "Create an EPG and associate with phy port",
 			"description": "\n\n",
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
 			"responses": [],
-			"rawModeData": "{\"fvAEPg\":{\"attributes\":\n{\"dn\":\"uni/tn-skywalker/ap-{{ANPNAME}}/epg-{{EPGNAME}}\",\"name\":\"{{EPGNAME}}\",\"rn\":\"epg-{{EPGNAME}}\",\"status\":\"created\"},\n\"children\":[{\"fvCrtrn\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/ap-{{ANPNAME}}/epg-{{EPGNAME}}/crtrn\",\"name\":\"default\",\"rn\":\"crtrn\",\"status\":\"created,modified\"},\n\"children\":[]}},{\"fvRsBd\":{\"attributes\":{\"tnFvBDName\":\"{{BDNAME}}\",\"status\":\"created,modified\"},\"children\":[]}},{\"fvRsDomAtt\":{\"attributes\":{\"tDn\":\"uni/phys-phys\",\"status\":\"created\"},\n\"children\":[]}},{\"fvRsNodeAtt\":{\"attributes\":{\"tDn\":\"topology/pod-1/node-101\",\"encap\":\"vlan-100\",\"status\":\"created\"},\"children\":[]}}]}}"
+			"rawModeData": "{\n  \"fvAEPg\": {\n    \"attributes\": {\n      \"dn\": \"uni/tn-{{TENANTNAME}}/ap-{{ANPNAME}}/epg-{{EPGNAME}}\",\n      \"name\": \"{{EPGNAME}}\",\n      \"rn\": \"epg-{{EPGNAME}}\",\n      \"status\": \"created\"\n    },\n    \"children\": [\n      {\n        \"fvCrtrn\": {\n          \"attributes\": {\n            \"dn\": \"uni/tn-{{TENANTNAME}}/ap-{{ANPNAME}}/epg-{{EPGNAME}}/crtrn\",\n            \"name\": \"default\",\n            \"rn\": \"crtrn\",\n            \"status\": \"created,modified\"\n          },\n          \"children\": []\n        }\n      },\n      {\n        \"fvRsBd\": {\n          \"attributes\": {\n            \"tnFvBDName\": \"{{BDNAME}}\",\n            \"status\": \"created,modified\"\n          },\n          \"children\": []\n        }\n      },\n      {\n        \"fvRsDomAtt\": {\n          \"attributes\": {\n            \"tDn\": \"uni/phys-phys\",\n            \"status\": \"created\"\n          },\n          \"children\": []\n        }\n      },\n      {\n        \"fvRsNodeAtt\": {\n          \"attributes\": {\n            \"tDn\": \"topology/pod-1/node-101\",\n            \"encap\": \"vlan-100\",\n            \"status\": \"created\"\n          },\n          \"children\": []\n        }\n      }\n    ]\n  }\n}"
 		},
 		{
 			"id": "9b04d3d7-fb07-0149-c86e-339e9908ffa3",
