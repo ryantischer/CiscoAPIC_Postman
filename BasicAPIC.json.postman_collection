@@ -23,7 +23,9 @@
 				"4b2f66cd-4ec5-d2ee-cbef-34b975996c3f",
 				"9b04d3d7-fb07-0149-c86e-339e9908ffa3",
 				"964847c7-6ada-996b-4b5f-870703beb4ca",
-				"41727ea0-3ac1-27c4-be62-a50c6788d9d8"
+				"41727ea0-3ac1-27c4-be62-a50c6788d9d8",
+				"9aa04956-317e-cc51-fe6b-cc2fdc30f4cc",
+				"3bef2180-757d-b2ed-d028-9269d862ee63"
 			],
 			"createdAt": "2015-07-08T18:08:59.000Z",
 			"updatedAt": "2015-07-13T16:35:45.000Z",
@@ -38,7 +40,9 @@
 			"description": "",
 			"order": [
 				"d5946442-5b1e-7679-170f-230ad0a4881b",
-				"55b3e41a-36bf-fed3-3fb9-3d995f462506"
+				"55b3e41a-36bf-fed3-3fb9-3d995f462506",
+				"579c6b50-147a-45f2-3f9e-9d22e21cfb42",
+				"eb622d48-65b2-6af1-f588-cddb99a6a1f6"
 			],
 			"createdAt": "2015-07-13T16:56:54.000Z",
 			"updatedAt": "2015-07-13T16:57:20.000Z",
@@ -134,7 +138,8 @@
 				"6f71cfba-3c94-b8be-664e-7c575387f037",
 				"80e1296a-eb01-4bd2-40e3-086691ae2f13",
 				"c0b2ab6a-d88f-569a-8dc0-8053fca9e9eb",
-				"707ee363-e57c-c1d6-0d16-d8c8d9892a81"
+				"707ee363-e57c-c1d6-0d16-d8c8d9892a81",
+				"0c2adcd6-6b4c-1f69-52a3-1caefd80f4e3"
 			],
 			"createdAt": "2015-07-08T18:07:48.000Z",
 			"updatedAt": "2015-07-13T15:59:58.000Z",
@@ -166,6 +171,25 @@
 			"name": "Tenant Details",
 			"description": "",
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049"
+		},
+		{
+			"id": "0c2adcd6-6b4c-1f69-52a3-1caefd80f4e3",
+			"headers": "Content-Type: text/xml\n",
+			"url": "https://{{URL}}/api/node/class/fvCEp.json?rsp-subtree=children&order-by=fvCEp.mac|asc&page=0&page-size=15",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1436987110835,
+			"name": "Show Global End Points",
+			"description": "",
+			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
+			"responses": []
 		},
 		{
 			"id": "17f01548-db86-fd6e-35a8-43e9f2e1f55c",
@@ -286,6 +310,26 @@
 			"helperAttributes": "{}",
 			"folder": "b07d3cb8-979e-6a98-8706-c5e758675cb4",
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049"
+		},
+		{
+			"id": "3bef2180-757d-b2ed-d028-9269d862ee63",
+			"headers": "Content-Type: application/json\n",
+			"url": "https://{{URL}}/api/node/mo/uni/tn-{{TENANTNAME}}/ap-{{ANPNAME}}/epg-{{EPGNAME}}.json",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437020750982,
+			"name": "Associate EPG with contract",
+			"description": "\n\n",
+			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
+			"responses": [],
+			"rawModeData": "{\"fvRsProv\":{\"attributes\":{\"tnVzBrCPName\":\"{{CONTRACT}}\",\"status\":\"created,modified\"},\"children\":[]}}"
 		},
 		{
 			"id": "3f57113a-5459-98fb-750e-4a1a1360a7a3",
@@ -445,6 +489,26 @@
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
 			"responses": [],
 			"rawModeData": "\n{\"fvTenant\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}\",\"status\":\"modified\"},\"children\"\n:[{\"fvBD\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/BD-{{BDNAME}}\",\"mac\":\"00:22:BD:F8:19:FF\",\"name\":\"{{BDNAME}}\",\"rn\":\"BD-{{BDNAME}}\",\"status\":\"created\"},\"children\":\n[{\"fvRsCtx\":{\"attributes\":{\"tnFvCtxName\":\"{{BDNAME}}\",\"status\":\"created,modified\"},\"children\":\n[]}},{\"fvSubnet\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/BD-{{BDNAME}}/subnet-[10.100.2.1/24]\",\"ip\":\"10.100.2.1/24\",\"rn\":\"subnet-[10.100.2.1/24]\",\"status\":\"created\"},\"children\":\n[]}}]}},{\"fvCtx\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/ctx-{{BDNAME}}\",\"name\":\"{{BDNAME}}\",\"rn\":\"ctx-{{BDNAME}}\",\"status\":\"created\"},\"children\":[]}}]}}\n"
+		},
+		{
+			"id": "579c6b50-147a-45f2-3f9e-9d22e21cfb42",
+			"headers": "Content-Type: application/json\n",
+			"url": "https://{{URL}}/api/node/mo/uni/tn-{{TENANTNAME}}.json",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437019727723,
+			"name": "Create Layer3 Out",
+			"description": "Requires Basic login.\nRequires varibales in environment.\n",
+			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
+			"responses": [],
+			"rawModeData": "{\"l3extOut\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/out-{{ROUTEOUT}}\",\"name\":\"{{ROUTEOUT}}\",\"rn\":\"out-{{ROUTEOUT}}\",\"status\":\"created\"},\n\"children\":[{\"ospfExtP\":\n{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/out-{{ROUTEOUT}}/ospfExtP\",\"areaId\":\"50\",\"areaType\":\"regular\",\"rn\":\"ospfExtP\",\"status\":\"created\"},\"children\":[]}},\n{\"l3extRsEctx\":{\"attributes\":{\"tnFvCtxName\":\"{{BDNAME}}\",\"status\":\"created,modified\"},\n\"children\":[]}},{\"l3extRsL3DomAtt\":{\"attributes\":{\"tDn\":\"uni/l3dom-l3out\",\"status\":\"created\"},\"children\":[]}}]}}\n\n"
 		},
 		{
 			"id": "6b5b23c3-cd53-f580-b57c-26d24c2a40ba",
@@ -640,6 +704,26 @@
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
 			"responses": [],
 			"rawModeData": "payload: {\"vzBrCP\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/brc-{{CONTRACT}}\",\"name\":\"{{CONTRACT}}\",\"scope\":\"tenant\",\"rn\":\"{{CONTRACT}}\",\"status\":\"created\"},\n\"children\":[{\"vzSubj\":\n{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/brc-{{CONTRACT}}/subj-testsub\",\"name\":\"testsub\",\"rn\":\"subj-testsub\",\"status\":\"created\"},\"children\":[]}}]}}"
+		},
+		{
+			"id": "9aa04956-317e-cc51-fe6b-cc2fdc30f4cc",
+			"headers": "Content-Type: application/json\n",
+			"url": "https://{{URL}}/api/node/mo/uni.json",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437020347091,
+			"name": "Create an EPG and associate with phy port",
+			"description": "\n\n",
+			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
+			"responses": [],
+			"rawModeData": "{\"fvAEPg\":{\"attributes\":\n{\"dn\":\"uni/tn-skywalker/ap-{{ANPNAME}}/epg-{{EPGNAME}}\",\"name\":\"{{EPGNAME}}\",\"rn\":\"epg-{{EPGNAME}}\",\"status\":\"created\"},\n\"children\":[{\"fvCrtrn\":{\"attributes\":{\"dn\":\"uni/tn-{{TENANTNAME}}/ap-{{ANPNAME}}/epg-{{EPGNAME}}/crtrn\",\"name\":\"default\",\"rn\":\"crtrn\",\"status\":\"created,modified\"},\n\"children\":[]}},{\"fvRsBd\":{\"attributes\":{\"tnFvBDName\":\"{{BDNAME}}\",\"status\":\"created,modified\"},\"children\":[]}},{\"fvRsDomAtt\":{\"attributes\":{\"tDn\":\"uni/phys-phys\",\"status\":\"created\"},\n\"children\":[]}},{\"fvRsNodeAtt\":{\"attributes\":{\"tDn\":\"topology/pod-1/node-101\",\"encap\":\"vlan-100\",\"status\":\"created\"},\"children\":[]}}]}}"
 		},
 		{
 			"id": "9b04d3d7-fb07-0149-c86e-339e9908ffa3",
@@ -883,6 +967,26 @@
 			"folder": "25aac48d-0cf2-f20f-2001-49060d62a033",
 			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
 			"rawModeData": "{\"aaaUser\": {\"attributes\": {\"name\": \"{{USERNAME}}\", \"pwd\": \"{{PASSWORD}}\"}}}"
+		},
+		{
+			"id": "eb622d48-65b2-6af1-f588-cddb99a6a1f6",
+			"headers": "Content-Type: application/json\n",
+			"url": "https://{{URL}}/api/node/mo/uni/tn-{{TENANTNAME}}/BD-{{BDNAME}}.json",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437019670480,
+			"name": "Associate l3 out with bridge domain",
+			"description": "Requires Basic login.\nRequires varibales in environment.\n",
+			"collectionId": "24366c5c-c17e-b5f3-d5a5-1cf4639f5049",
+			"responses": [],
+			"rawModeData": "{\"fvRsBDToOut\":{\"attributes\":{\"tnL3extOutName\":\"{{ROUTEOUT}}\",\"status\":\"created\"},\"children\":[]}}\n\n"
 		},
 		{
 			"id": "ed4cc149-44a6-1881-e051-8f8bed70cd9d",
