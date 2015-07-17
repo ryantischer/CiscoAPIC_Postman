@@ -17,6 +17,8 @@ Requires a Postman environment to be configured with the CASE sensitive data as 
 	SYSLOGNAME = name of syslog object to create
 	SYSLOGDEST = IP address of syslog server
 
+Included is an example environment that can be imported.  I recomend editing the file with site specific infomation before importing.  
+
 Details, including Postman setup and usage found here...
 
 http://policyetc.com/post/google-postman-and-aci-download-the-collection
